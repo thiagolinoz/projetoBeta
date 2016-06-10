@@ -2,6 +2,12 @@
 	
 	class Config
 	{
+
+		public static function baseUrl()
+		{
+			return "http://".$_SERVER['SERVER_NAME']."/projetoBeta/";
+		}
+
 		public static function conectar()
 		{
 			//conecta mongodb e passa nome da colecao como parametro
